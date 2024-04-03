@@ -1,9 +1,7 @@
 :root{
-    --pink:#e84393;
+    --pink:#ff003cbb;
 
 }
-
-
 
 *{
     margin: 0; padding: 0;
@@ -11,7 +9,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     outline: none; border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: .2s linear;
 }
 
@@ -54,6 +51,7 @@ section{
 .btn:hover{
     background:var(--pink) ;
 }
+
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -70,6 +68,7 @@ header .logo{
     font-size: 3rem;
     color: #333;
     font-weight: bolder;
+    text-align: left;
 }
 
 header .logo span{
@@ -101,7 +100,7 @@ header #toggler {
     display: none;
 }
 
-header.fa-bars{
+header.icons-bootstrap{
     font-size: 3rem;
     color: #333;
     border-radius: .5rem;
@@ -115,7 +114,6 @@ header.fa-bars{
     display:flex ;
     align-items: center;
     min-height: 100vh;
-    background: no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -153,12 +151,12 @@ header.fa-bars{
     padding-bottom: 3rem;
 }
 
-.sobrenos.row.video-container{
+.sobrenos .row .video-container{
     flex: 1 1 40rem;
     position: relative;
 }
 
-.sobrenos.row.video-container video{
+.sobrenos .row .video-container video{
     width: 100%;
     border: 1.5rem solid #fff;
     border-radius: .5rem;
@@ -167,11 +165,12 @@ header.fa-bars{
     object-fit: cover;
 }
 
-.sobrenos.row.video-container h3{
+.sobrenos .row .video-container h3{
     position: absolute;
-    top: 50%; transform: translate(-50%);
+    top: 50%; transform: translateY(-50%);
     font-size: 3rem;
     background: #fff;
+    width: 100%;
     padding: 1rem 2rem;
     text-align: center;
     mix-blend-mode: screen;
@@ -517,7 +516,7 @@ padding-bottom: 5rem;
 }
 
 @media (max-width:768px){
-    header.fa-bars{
+    header.icons-bootstrap{
         display: block;
     }
 
@@ -528,6 +527,15 @@ padding-bottom: 5rem;
         border-top: .1rem solid rgba(0,0,0,0.1);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 
+    }
+
+
+    header.navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: 0.1rem solid rgba(0,0,0,0.1);
+        display: block;
     }
 
     .home.conteudo h3{
