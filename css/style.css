@@ -181,7 +181,7 @@ header.icons-bootstrap{
 }
 
 .sobrenos .row .conteudo h3{
-    font-size:3rem;
+    font-size: 3rem;
     color: #333;
 }
 
@@ -213,7 +213,7 @@ padding-bottom: 5rem;
 
 }
 
-.icons-container .icons .img{
+.icons-container .icons img{
     height: 5rem;
     margin-right: 2rem;
 }
