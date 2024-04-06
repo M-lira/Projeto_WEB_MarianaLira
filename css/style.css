@@ -66,19 +66,28 @@ header{
 }
 
 
+
 header .logo{
     font-size: 3rem;
     color: #333;
     font-weight: bolder;
     text-align: left;
+    text-decoration: none;
 }
+
+
 
 header .logo span{
     color: var(--pink);
     
 }
 
-nav input{
+nav ul li{
+    padding : 0 10px 0 10px;
+    
+    }
+
+.nav input{
     background-color: var(--pink) !important;
     color: var(--preto) !important;
     
@@ -88,6 +97,7 @@ header .navbar a{
     font-size: 2rem;
     padding: 0 1.5rem;
     color: #333;
+    text-decoration: none;
 }
 
 header .navbar a:hover{
@@ -98,14 +108,17 @@ header .icons a{
     font-size: 2.5rem;
     color: #333;
     margin-left: 1.5rem;
+    text-decoration: none;
 }
 
 header .icons a:hover{
     color: var(--pink);
+    text-decoration: none;
 }
 
 header #toggler {
     display: none;
+    text-decoration: none;
 }
 
 header.icons-bootstrap{
@@ -116,12 +129,16 @@ header.icons-bootstrap{
     cursor: pointer;
     border: .1rem solid rgba(0,0,0,0.1);
     display: none;
+    text-decoration: none;
 }
+
+
 
 .home{
     display:flex ;
     align-items: center;
     min-height: 100vh;
+    background: url(../img/Be_My_Bae-779b-Overdose-16x9.webp);
     background-size: cover;
     background-position: center;
 }
@@ -133,21 +150,96 @@ header.icons-bootstrap{
 
 .home .conteudo h3{
     font-size: 6rem;
-    color: #333;
+    color: #fff;
 }
 
 .home .conteudo span{
     font-size: 3.5rem;
-    color: var(--pink);
+    color: #ff1067;
     padding: 1rem 0 ;
     line-height: 1.5;
 }
 
 .home .conteudo p{
     font-size: 1.5rem;
-    color: #999;
+    color: #666;
     padding: 1rem 0 ;
     line-height: 1.5;
+}
+
+.content-homepage .row{
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    overflow-x: hidden;
+    padding: 5rem 0;
+}
+
+.content-homepage .row .imgWrapper{
+    overflow: hidden;
+}
+
+.content-homepage .row .imgWrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.content-homepage .row .imgWrapper:hover img{
+transform: scale(1.25);
+}
+
+.content-homepage .row .contentWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30PX;
+
+}
+
+.content-homepage .row .contentWrapper span.textWrapper{
+    display: block;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.content-homepage .row .contentWrapper span.textWrapper span{
+    display: inline-block;
+    background: #333;
+    width: 70px;
+    height: 5px;
+}
+
+.content-homepage .row .contentWrapper h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--pink);
+    padding-bottom: 20px;
+}
+
+.content-homepage .row .contentWrapper p{
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 25px;
+}
+
+.content-homepage .row .contentWrapper a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #333;
+    color: #fff;
+    padding: 15px 40px;
+    letter-spacing: 1px;
 }
 
 .sobrenos .row{
