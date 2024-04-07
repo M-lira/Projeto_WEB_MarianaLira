@@ -68,8 +68,6 @@ header{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
 }
 
-
-
 header .logo{
     font-size: 3rem;
     color: #333;
@@ -77,8 +75,6 @@ header .logo{
     text-align: left;
     text-decoration: none;
 }
-
-
 
 header .logo span{
     color: var(--pink);
@@ -90,11 +86,6 @@ nav ul li{
     
     }
 
-.nav input{
-    background-color: var(--pink) !important;
-    color: var(--preto) !important;
-    
-}
 
 header .navbar a{
     font-size: 2rem;
@@ -134,8 +125,6 @@ header.icons-bootstrap{
     display: none;
     text-decoration: none;
 }
-
-
 
 .home{
     display:flex ;
@@ -266,35 +255,6 @@ transform: scale(1.25);
     box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
     height: 100%;
     object-fit: cover;
-}
-/* card1 */
-#btn2 button{
-    width: 100px;
-    height: 30px;
-    background: transparent;
-    border: 1px solid black;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-#btn2 button:hover{
-    background-color: rgba(238,224,208);
-}
-/* card1 */
-
-/* card2 */
-#tpc{
-    box-shadow: 0 0 5px black;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-#tpc:hover{
-    transform: translateY(-10px);
-}
-/* card2 */
-
-/* card3 */
-#c p{
-    font-weight: bold;
 }
 
 .sobrenos .row .video-container h3{
